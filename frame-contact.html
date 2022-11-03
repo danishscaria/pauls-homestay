@@ -1,0 +1,35 @@
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="js/contact_me.js"></script> -->
+</head>
+<body style="text-align:left;">
+<form id="contactform" name="contactform" method="post" action="mail.php">
+  <div class="row form-group">
+  Name <span class="mandatory">*</span>
+  <div class="row contactBox">
+  	<input  type="text" name="first_name" maxlength="100" value="your name" onFocus="this.value=''" class="form-control" id="name" required>
+  </div>
+<div class="row form-group">
+ Email Id <span class="mandatory">*</span>
+  <div class="row contactBox"><input  type="email" name="email" maxlength="80"  value="your email" onFocus="this.value=''" id="email" required></div>
+ Phone Number <span class="mandatory">*</span>
+  <div class="row contactBox">
+<input  type="number" name="telephone" maxlength="30" value="" onFocus="this.value=''" id="telephone" required>
+</div>
+<div class="row contactBox">
+ Message <span class="mandatory">*</span>
+  <br>
+<textarea  name="comments" maxlength="1000" onFocus="this.value=''" rows="5" id="message" required></textarea></div>
+<p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+</div>
+<div class="row text-right"><input type="reset" value="Cancel" class="cancelBtn"> <input type="submit" value="Submit" class="submitBtn"></div>
+</form>
+
+</body>
+
+</html>
